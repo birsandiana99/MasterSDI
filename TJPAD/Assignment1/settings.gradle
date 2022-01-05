@@ -1,0 +1,10 @@
+rootProject.name = 'Assignment1'
+include 'tomcat'
+include 'jetty'
+include 'wildfly'
+include 'glassfish'
+include 'glassfish_server'
+include 'jetty_server'
+include 'tomcat_server'
+include 'wildfly_server'
+

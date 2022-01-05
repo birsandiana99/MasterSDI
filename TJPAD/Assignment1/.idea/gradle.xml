@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../resources/gradle-3.5" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/glassfish" />
+            <option value="$PROJECT_DIR$/glassfish_server" />
+            <option value="$PROJECT_DIR$/jetty" />
+            <option value="$PROJECT_DIR$/jetty_server" />
+            <option value="$PROJECT_DIR$/tomcat" />
+            <option value="$PROJECT_DIR$/tomcat_server" />
+            <option value="$PROJECT_DIR$/wildfly" />
+            <option value="$PROJECT_DIR$/wildfly_server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
