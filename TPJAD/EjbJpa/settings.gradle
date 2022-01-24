@@ -1,0 +1,6 @@
+rootProject.name = 'EjbJpa'
+include 'glassfish_jndi'
+include 'glassfish_ejb'
+include 'wildfly_jndi'
+include 'wildfly_ejb'
+
