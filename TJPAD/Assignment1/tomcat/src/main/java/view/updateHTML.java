@@ -40,7 +40,7 @@ public class updateHTML extends HttpServlet {
         out.println("<input type='hidden' name='action' value='confirmUpdate'>");
         out.println("Brand: <input type='text' readonly name='id' value='"+ id + "'>");
         out.println("Brand: <input type='text' readonly name='brand' value=' "+ brand + "'>");
-        out.println("Cod sasiu: <input readonly type='text' name='code' value='" + code + "'>");
+        out.println("Serie sasiu: <input readonly type='text' name='code' value='" + code + "'>");
         out.println("An fabricatie: <input readonly type='text' name='year' value='" + year + "'>");
         out.println("Culoare: <input type='text' name='color' value='" + color + "'>");
         out.println("<input type='submit' name='updateBtn' value='Actualizeaza'>");

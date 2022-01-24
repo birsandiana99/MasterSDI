@@ -35,6 +35,7 @@ public class dispatcher extends HttpServlet {
             System.out.println("ID "+id);
             ctrl.updateCar(id, color);
             resp.sendRedirect("/dispatcher");
+            return;
 //            requestDispatcher.forward(req, resp);
         }
         else if(action!=null &&  action.equals("add")){
@@ -42,7 +43,7 @@ public class dispatcher extends HttpServlet {
             requestDispatcher.forward(req, resp);
         }
         else if(action!=null &&  action.equals("confirmAdd")){
-//            RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/cars");
+//            RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/dispatcher");
             color = req.getParameter("color");
             brand = req.getParameter("brand");
             System.out.println("BRAND::: " +  brand);
@@ -50,6 +51,7 @@ public class dispatcher extends HttpServlet {
             code = req.getParameter("code");
             ctrl.addCar(new Car(code, color, brand, year));
             resp.sendRedirect("/dispatcher");
+            return;
 //            requestDispatcher.forward(req, resp);
         }
         else if(action!=null &&  action.equals("delete")){
@@ -60,7 +62,8 @@ public class dispatcher extends HttpServlet {
             id = Integer.parseInt(req.getParameter("id"));
             ctrl.deleteCar(id);
             resp.sendRedirect("/dispatcher");
-//            RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/delete");
+            return;
+//            RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/cars");
 //            requestDispatcher.forward(req, resp);
         }
 //        else{
@@ -72,15 +75,15 @@ public class dispatcher extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         handleAction(req, resp);
-        RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/cars");
-        requestDispatcher.forward(req, resp);
+//        RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/cars");
+//        requestDispatcher.forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         handleAction(req, resp);
-        RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/cars");
-        requestDispatcher.forward(req, resp);
+//        RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/cars");
+//        requestDispatcher.forward(req, resp);
     }
 
 

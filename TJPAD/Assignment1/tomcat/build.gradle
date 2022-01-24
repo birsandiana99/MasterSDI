@@ -17,6 +17,7 @@ dependencies {
 }
 
 jar {
+    duplicatesStrategy('include')
     manifest { attributes 'Main-Class': 'TomcatServer' }
     from (configurations.runtimeClasspath.collect {it.isDirectory() ? it : zipTree(it) })
 }

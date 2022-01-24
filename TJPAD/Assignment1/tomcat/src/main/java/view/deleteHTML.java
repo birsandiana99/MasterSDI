@@ -47,11 +47,11 @@ public class deleteHTML extends HttpServlet {
         out.println("<form method='GET' action='/add'>");
         out.println("<input id='add' type='submit' value='Adauga'>");
         out.println("</form>");
-        out.println("<form method='POST' action='/dispatcher'>");
+        out.println("<form method='GET' action='/dispatcher'>");
         out.println("<input type='hidden' name='action' value='confirmDelete'>");
         out.println("<input type='hidden' name='id' value='" + id + "'>");
         out.println("Brand: <input readonly type='text' name='brand' value='" + brand + "'>");
-        out.println("Cod sasiu: <input readonly type='text' name='code' value='" + code +"'>");
+        out.println("Serie sasiu: <input readonly type='text' name='code' value='" + code +"'>");
         out.println("An fabricatie: <input readonly type='text' name='year' value='" + year + "'>");
         out.println("Culoare: <input readonly type='text' name='color' value='" +color + "'>");
         out.println("<input type='submit' name='deleteBtn' value='Sterge'>");

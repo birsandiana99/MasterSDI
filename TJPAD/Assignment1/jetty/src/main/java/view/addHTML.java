@@ -40,7 +40,7 @@ public class addHTML extends HttpServlet {
         out.println("<form method='POST' action='/dispatcher'>");
         out.println("<input type='hidden' name='action' value='confirmAdd'>");
         out.println("Brand: <input type='text' name='brand' value='"+ "'>");
-        out.println("Cod sasiu: <input type='text' name='code' value='" +  "'>");
+        out.println("Serie sasiu: <input type='text' name='code' value='" +  "'>");
         out.println("An fabricatie: <input type='text' name='year' value='" +  "'>");
         out.println("Culoare: <input type='text' name='color' value='" + "'>");
         out.println("<input type='submit' name='addBtn' value='Adauga'>");

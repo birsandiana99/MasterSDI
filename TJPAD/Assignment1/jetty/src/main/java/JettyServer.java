@@ -1,6 +1,6 @@
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
-import org.eclipse.jetty.servlet.ServletHandler;
+//import org.eclipse.jetty.servlet.ServletHandler;
 
 public class JettyServer {
     public static void main(String[] args) throws Exception{
@@ -16,5 +16,6 @@ public class JettyServer {
         System.out.println("Start jetty embedded server");
         server.start();
         server.join();
+        server.stop();
     }
 }

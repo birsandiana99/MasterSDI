@@ -10,8 +10,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%! CarsController ctrl;%>
 <% if(session.getAttribute("ctrl")==null){
-    session.setAttribute("ctrl",ctrl);
     ctrl = new CarsController(new Repository());
+    session.setAttribute("ctrl",ctrl);
 }
 else{
   ctrl = (CarsController) session.getAttribute("ctrl");}

@@ -18,6 +18,12 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }
 
+jar {
+    duplicatesStrategy('include')
+    manifest { attributes 'Main-Class': 'JettyServer' }
+    from (configurations.runtimeClasspath.collect {it.isDirectory() ? it : zipTree(it) })
+}
+
 test {
     useJUnitPlatform()
 }

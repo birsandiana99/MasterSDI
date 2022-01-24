@@ -28,6 +28,7 @@ public class carsHTML extends HttpServlet {
         out.println("<!DOCTYPE html>");
         out.println("<html>");
         out.println("<head>");
+        out.println("<title> JETTY </title>");
         out.println("</head>");
         out.println("<body>");
         out.println("<form method='GET' action='/add'>");
@@ -39,7 +40,7 @@ public class carsHTML extends HttpServlet {
             out.println("<input type='hidden' name='action' value='update'>");
             out.println("<input type='hidden' name='id' value=" + c.getId() + ">");
             out.println("Brand: <input readonly type='text' name='brand' value=" + c.getBrand() + ">");
-            out.println("Cod sasiu: <input readonly type='text' name='code' value=" + c.getCode() + ">");
+            out.println("Serie sasiu: <input readonly type='text' name='code' value=" + c.getCode() + ">");
             out.println("An fabricatie: <input readonly type='text' name='year' value=" + c.getYear() + ">");
             out.println("Culoare: <input readonly type='text' name='color' value=" + c.getColor() + ">");
             out.println("<input type='submit' name='updateBtn' value='Actualizeaza'>");

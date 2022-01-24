@@ -11,11 +11,10 @@
 <%! CarsController ctrl;
 %>
 <%
+//    System.out.println("ctrl" + ctrl);
     ctrl = (CarsController) session.getAttribute("ctrl");
-    System.out.println("-------- "  + ctrl.getAll().size());
     int carId = Integer.parseInt(request.getParameter("carId"));
     Car car = ctrl.getCarById(carId);
-    System.out.println("===" + car);
 %>
 <html>
 <head>
